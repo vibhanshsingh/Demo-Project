@@ -1,0 +1,87 @@
+<mat-card-header class="mat1">
+
+    <button mat-button [matMenuTriggerFor]="menu" class="nav-menu">X Series</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="goToPhone1('x3-pro')"> X3 Pro </button>
+        <button mat-menu-item>X3</button>
+        <button mat-menu-item>X2</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menu2" class="nav-menu">M Series</button>
+    <mat-menu #menu2="matMenu">
+        <button mat-menu-item (click)="goToPhone2('m3-pro')">M3 Pro 5G</button>
+        <button mat-menu-item>M2 Pro</button>
+        <button mat-menu-item>M3</button>
+        <button mat-menu-item>M2</button>
+        <button mat-menu-item>M2 Reloaded</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menu3" class="nav-menu">C Series</button>
+    <mat-menu #menu3="matMenu">
+        <button mat-menu-item (click)="goToPhone3('c3')">C3</button>
+        <button mat-menu-item>C31</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menu4" class="nav-menu">F Series</button>
+    <mat-menu #menu4="matMenu">
+        <button mat-menu-item (click)="goToPhone4('F3-GT')">F3 GT</button>
+    </mat-menu>
+
+    <!-- <button mat-button class="poco-community" >Poco Community</button> -->
+</mat-card-header>
+
+<mat-card class="mat2"></mat-card>
+
+<!-- interval='5000'  proportion="25" slides='5' -->
+
+
+<mat-carousel 
+    timings="250ms ease-in"
+    [autoplay]="true"
+    color="accent"
+    maxWidth="auto"
+    [loop]="true"
+    [hideArrows]="false"
+    [hideIndicators]="false"
+    [useKeyboard]="true"
+    [useMouseWheel]="false"
+    orientation="ltr"
+    [maintainAspectRatio]="false"
+    slideHeight="115%"
+    >
+    
+  <mat-carousel-slide *ngFor="let slide of slides; let i = index" [image]="slide.image" [hideOverlay]="true"
+  ></mat-carousel-slide>
+</mat-carousel>
+
+
+<youtube-player 
+  videoId="sB9bZvJP-fM" 
+  suggestedQuality="highres" 
+  [height]="650" 
+  [width]="1349" 
+  [startSeconds]="0"
+  [endSeconds]="50">
+</youtube-player>
+
+
+<a href="https://login.poco.in/social/login?callbackUrl=https://community.poco.in/&clientToken=eG06c3ByaW5nLXNlY3VyaXR5LW9hdXRoMi1yZWFkLXdyaXRlLWNsaWVudDpzc286c3ByaW5nLXNlY3VyaXR5LW9hdXRoMi1yZWFkLXdyaXRlLWNsaWVudC1wYXNzd29yZDEyMzQ=">
+    <img class="all-banner" src="\assets\banners\Banner2.png">
+</a>
+
+<a href="https://www.flipkart.com/poco-c3-arctic-blue-64-gb/p/itm7f632fdb49b3b?pid=MOBFVQJ5NV9ZSYEF&lid=LSTMOBFVQJ5NV9ZSYEFCPQTX8&marketplace=FLIPKART&q=C3&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=c16036e3-e640-4742-9fa5-3e9476d5a52d.MOBFVQJ5NV9ZSYEF.SEARCH&ppt=sp&ppn=sp&ssid=bpoak3pepc0000001633348002659&qH=3abe124ecc82bf2c">
+    <img class="all-banner" src="\assets\banners\banner3.png">
+</a>
+
+<a href="https://www.flipkart.com/poco-m2-brick-red-128-gb/p/itm4a652f8f061c0?pid=MOBFV9V9KMAHY3AJ&lid=LSTMOBFV9V9KMAHY3AJJQNVZ1&marketplace=FLIPKART&q=M2+poco&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=SEARCH&iid=7856820f-6351-4621-aa74-be4a30c9419e.MOBFV9V9KMAHY3AJ.SEARCH&ppt=sp&ppn=sp&ssid=bjoum5u4ow0000001633348368081&qH=f6304503bd6e1ac5">
+    <img class="all-banner" src="\assets\banners\banner4.png">
+</a>
+
+<a href="https://www.flipkart.com/poco-m2-pro-two-shades-black-64-gb/p/itmaf67e90291adf?pid=MOBFT7MKC9DMG2PU&lid=LSTMOBFT7MKC9DMG2PUNVVJJB&marketplace=FLIPKART&q=M2+poco&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=SEARCH&iid=7856820f-6351-4621-aa74-be4a30c9419e.MOBFT7MKC9DMG2PU.SEARCH&ppt=sp&ppn=sp&ssid=bjoum5u4ow0000001633348368081&qH=f6304503bd6e1ac5">
+    <img class="all-banner" src="\assets\banners\banner5.png">
+</a>
+
+<a href="https://www.flipkart.com/poco-x2-phoenix-red-128-gb/p/itm399dc084bcc97?pid=MOBFZGJ6AXGFTJSC&lid=LSTMOBFZGJ6AXGFTJSC77SOJU&marketplace=FLIPKART&q=X2&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=SEARCH&iid=9b0e5eda-9431-4292-8831-bf52f4bc6bac.MOBFZGJ6AXGFTJSC.SEARCH&ppt=pp&ppn=pp&ssid=x9u8w4xvj40000001633349006204&qH=54105bddbfe3f639">
+    <img class="all-banner" src="\assets\banners\banner6.png">
+</a>
+

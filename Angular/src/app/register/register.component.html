@@ -1,0 +1,40 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+
+        <mat-toolbar color="primary"> Register Page
+
+            <div class="homeIcon">
+                <button mat-mini-fab color="basic" (click)="goToHomePage('home')" >
+                  <mat-icon>home</mat-icon>
+                </button>
+            </div>
+
+        </mat-toolbar>
+
+        <form fxLayoutAlign="stretch" fxLayout="column" class="register-form">
+
+            <mat-form-field class="firstName">
+              <input matInput type="text" placeholder="First Name" [(ngModel)] = "user.firstName" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput type="text" placeholder="Last Name" [(ngModel)] = "user.lastName" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+
+            <mat-form-field>              
+                <input matInput type="email" placeholder="email" [(ngModel)] = "user.email" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+
+            <mat-form-field>              
+                <input matInput type="number" placeholder="Mobile Number" [(ngModel)] = "user.phoneNumber" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+
+            <mat-form-field>              
+                <input matInput type="password" placeholder="Password" [(ngModel)] = "user.password" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+
+              <button mat-raised-button type="submit" (click) = "registerNow()"> Register </button>
+          </form>
+          
+    </mat-card>
+</div>

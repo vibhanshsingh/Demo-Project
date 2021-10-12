@@ -1,0 +1,41 @@
+.mat-card{
+    align-items: center;
+    background-color: #1B1212;
+    position:sticky;
+    overflow: auto;
+    width: 100%;
+}
+
+.img {
+  text-align: center;
+}
+
+section {
+    display: flex;
+   justify-content: flex-end;
+    
+  }
+  
+  .login-button {
+    margin: -35px 20px 0px 0px;
+  }
+
+  .register-button {
+    margin: -35px 90px 0px 0px;
+  }
+
+  .fixed-header {
+    position: fixed;
+    z-index:999;
+    }
+/*     
+    #frugalmap {
+    height: 300px;
+    width: 100%;
+    margin-top:50px;
+    }
+    
+    .mat-elevation-z5 {
+    position: relative;
+    z-index: 2;
+    } */

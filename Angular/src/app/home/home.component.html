@@ -1,0 +1,19 @@
+<mat-card class="mat-header" >
+
+    <div class="img">   
+         <a routerLink="/home" routerLinkActive="active"><img src="assets\POCO-LOGO.png" width = "10%" router></a>
+    </div>
+
+    <section>
+      
+        <div class="login-button">
+          <button mat-raised-button (click)="goToLoginPage('login')" color="basic" >Login</button>
+        </div>
+
+        <div class="register-button">
+            <button mat-raised-button (click)="goToRegisterPage('register')" color="primary">Register</button>
+        </div>
+
+      </section>
+
+</mat-card>

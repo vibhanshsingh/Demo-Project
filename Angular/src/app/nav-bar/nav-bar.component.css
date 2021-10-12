@@ -1,0 +1,38 @@
+.mat1{
+    background-color: black;
+    height: 10%;
+}
+.nav-menu {
+    color: white;
+}
+
+.css-dropdown .css-dropdown-menu {
+    margin-top: -5px;
+    display: none;
+  }
+  
+  .css-dropdown:hover .css-dropdown-menu {
+    display: block;
+  }
+
+  .poco-community {
+    color: white;
+  }
+
+  .mat2 {
+    background-color:#28282B;
+    height: 10%;
+    width: 100%;
+
+  }
+  
+  .slider{
+    margin-top: 1110px;
+    height: 10px;
+   
+  }
+  
+  .all-banner {
+    width:100%;
+   height:100%;
+  }
