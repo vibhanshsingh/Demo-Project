@@ -21,7 +21,7 @@
                             <td>{{ item.productName }}</td>
                             <td style="width: 25%;">{{ item.productDescription }}</td>
                             <td style="width: 12%;">{{ item.productPrice }}</td>
-                            <td style="width: 12%;"><button class="btn btn-primary"> + </button> &nbsp;{{ quantity }} &nbsp; <button class="btn btn-primary">&nbsp;-</button></td>
+                            <td style="width: 12%;"><button class="btn btn-primary"> + </button> &nbsp;{{ products.quantity }} &nbsp; <button class="btn btn-primary">&nbsp;-</button></td>
                             <td style="width: 12%;">{{ item.total }}</td>
                             <td>
                                 <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt">Delete</i></button>
