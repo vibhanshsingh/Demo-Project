@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <ng-container class="middle" *ngFor="let item of productList">
+            <div class="card col-md-3 middle">
+                <img class="img" src="{{item.productImage}}" alt="phone Image">
+                <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;"><strong>{{item.productName}}</strong></h5>
+                <p>{{item.productDescription}} </p>
+                <p><strong> Price: &nbsp; </strong>${{item.productPrice}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to Cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

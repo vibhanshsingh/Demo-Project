@@ -29,6 +29,8 @@ import { Phone3Component } from './phone3/phone3.component';
 import { Phone2Component } from './phone2/phone2.component';
 import { Phone4Component } from './phone4/phone4.component';
 import { NewComponent } from './new/new.component';
+import { CartComponent } from './cart/cart.component';
+import { AllProductComponent } from './all-product/all-product.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { NewComponent } from './new/new.component';
     Phone3Component,
     Phone2Component,
     Phone4Component,
-    NewComponent
+    NewComponent,
+    CartComponent,
+    AllProductComponent
   ],
   imports: [
 

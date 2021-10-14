@@ -21,9 +21,9 @@ import org.springframework.web.bind.annotation.*;
         return new ResponseEntity(savedUser, HttpStatus.CREATED);
     }
 
-//    @GetMapping(value = "/search/{firstName}")
-//    public RegisterUser searchUser(@PathVariable (name = "firstName") String firstName) {
-//        return service.findByFirstName(firstName);
-//    }
+    @GetMapping(value = "/search/{firstName}")
+    public RegisterUser searchUser(@PathVariable (name = "firstName") String firstName) {
+        return service.findByFirstName(firstName);
+    }
 
 }

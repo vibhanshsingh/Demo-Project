@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AllProductComponent } from '../all-product/all-product.component';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,15 @@ export class HeaderComponent implements OnInit {
   goToRegisterPage(register:string):void {
     this.router.navigate([`${register}`]);
   }
+
+  goToCartPage(cart:string):void {
+    this.router.navigate([`${cart}`]);
+  }
   
+  goToAllProductPage(allproduct:string):void {
+    this.router.navigate([`${allproduct}`]);
+  }
+
   ngOnInit(): void {
   }
 

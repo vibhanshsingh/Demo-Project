@@ -7,9 +7,12 @@ import { RegisterComponent } from './register/register.component';
 import { Phone3Component } from './phone3/phone3.component';
 import { Phone2Component } from './phone2/phone2.component';
 import { Phone4Component } from './phone4/phone4.component';
+import { CartComponent } from './cart/cart.component';
+import { AllProductComponent } from './all-product/all-product.component';
 
 const routes: Routes = [ 
   {path: '', redirectTo:'/home', pathMatch: 'full' },
+  {path: 'cart', component: CartComponent},
   // {path: '**', component: PageNotFound },
   {path: 'home', component: AllHomeComponent},
   {path:'login', component: LoginComponent},
@@ -19,6 +22,7 @@ const routes: Routes = [
   {path: 'm3-pro', component: Phone2Component},
   {path: 'c3', component: Phone3Component},
   {path: 'F3-GT', component: Phone4Component},
+  {path: 'allProduct', component: AllProductComponent}
 
 ];
 

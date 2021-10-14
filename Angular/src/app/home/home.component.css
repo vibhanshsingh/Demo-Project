@@ -21,13 +21,25 @@ section {
   }
 
   .register-button {
-    margin: -35px 90px 0px 0px;
+    margin: -35px 20px 0px 0px;
   }
 
   .fixed-header {
     position: fixed;
     z-index:999;
     }
+
+    .cart-button {
+      margin: -35px 30px 0px 0px;
+    }
+  
+
+    .allProduct-button {
+      margin: -35px 20px 0px 0px;
+
+    }
+
+
 /*     
     #frugalmap {
     height: 300px;
